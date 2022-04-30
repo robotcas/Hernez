@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+:root {
+  --yellow: #a1a1a1;
+  --black: #222;
+  --white: #fff;
+  --light-color: #222;
+  --light-bg: #eee;
+  --light-color-2: #fff;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+}
+
+section {
+  padding: 5rem 10%;
+}
+
+.heading {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  color: var(--black);
+  text-transform: capitalize;
+  padding-left: 1rem;
+  border-left: 1rem solid var(--yellow);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  background: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.btn:hover {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    top: 50%;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    top: 50%;
+    opacity: 0;
+  }
+}
+
+/* section clientes */
+
+.logo-container {
+  text-align: center;
+}
+
+.logo-container img {
+  height: 10rem;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* section servicios */
+
+.services .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(31rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+  margin-left: -1em;
+}
+
+.services .box-container .box {
+  text-align: center;
+  padding: 2rem;
+  background: var(--light-bg);
+  border-radius: 0.5rem;
+}
+
+.services .box-container .box img {
+  height: 10rem;
+  margin-bottom: 0.5rem;
+}
+
+.services .box-container .box h3 {
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.services .box-container .box p {
+  font-size: 1.4rem;
+  color: var(--light-color);
+  line-height: 2;
+}
